@@ -1,4 +1,10 @@
 
+# Zipkin installation in Docker
+
+```shell
+ docker run --rm -p 9411:9411 --name zipkin openzipkin/zipkin
+```
+
 
 # OpenTelemetry Packages for Node.js Tracing
 
@@ -52,6 +58,11 @@ Traces are then exported to Zipkin for visualization and performance monitoring.
 
 
 
+## OpenTelemetry Nodejs Configuration
+
+```https://opentelemetry.io/docs/languages/js/getting-started/nodejs/```
 
 
+
+[Reference Tutorial](https://www.youtube.com/watch?v=r8UvWSX3KA8&t=18s)
 
