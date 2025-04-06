@@ -1,0 +1,22 @@
+{
+  "name": "otel-zipkin-nj",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "OpenTelemetry Course",
+  "dependencies": {
+    "@opentelemetry/core": "^2.0.0",
+    "@opentelemetry/exporter-zipkin": "^2.0.0",
+    "@opentelemetry/node": "^0.24.0",
+    "@opentelemetry/plugin-express": "^0.15.0",
+    "@opentelemetry/plugin-http": "^0.18.2",
+    "@opentelemetry/plugin-https": "^0.18.2",
+    "@opentelemetry/tracing": "^0.24.0",
+    "express": "^5.1.0"
+  }
+}
