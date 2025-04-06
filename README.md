@@ -1,15 +1,15 @@
 
-```markdown
+
 # OpenTelemetry Packages for Node.js Tracing
 
 This project uses **OpenTelemetry** to enable distributed tracing in a Node.js application. The following npm packages are installed for instrumentation and trace exporting.
 
-## 📦 Installed Packages
+##  Installed Packages
 
-### `@opentelemetry/core`
+## `@opentelemetry/core`
 Provides core types, interfaces, and base implementations used throughout the OpenTelemetry ecosystem.
 
-### `@opentelemetry/node`
+## `@opentelemetry/node`
 A preconfigured OpenTelemetry SDK for Node.js applications. It automatically registers instrumentation for supported modules and sets up tracing infrastructure.
 
 ### `@opentelemetry/plugin-http`
@@ -18,16 +18,16 @@ Instruments the built-in `http` module to create spans for incoming and outgoing
 ### `@opentelemetry/plugin-https`
 Instruments the built-in `https` module for HTTPS request and response tracing.
 
-### `@opentelemetry/plugin-express`
+## `@opentelemetry/plugin-express`
 Automatically creates spans for each middleware and route handler in an Express application.
 
-### `@opentelemetry/tracing`
+## `@opentelemetry/tracing`
 Provides classes and utilities to create custom `TracerProvider`, `Tracer`, and `SpanProcessor` instances. Useful for setting up tracing logic manually.
 
 ### `@opentelemetry/exporter-zipkin`
 Exports trace data to a Zipkin backend. Converts OpenTelemetry traces into Zipkin format and sends them via HTTP.
 
-## 🛠️ Use Case
+##  Use Case
 
 These packages are used to trace requests across services in a Node.js microservices architecture. Spans are automatically created for:
 - Incoming API calls (via Express)
@@ -36,7 +36,7 @@ These packages are used to trace requests across services in a Node.js microserv
 
 Traces are then exported to Zipkin for visualization and performance monitoring.
 
-## 🚀 Example Workflow
+##  Example Workflow
 
 1. Incoming HTTP request hits your Express route
 2. Middleware and route handler spans are created
@@ -44,14 +44,14 @@ Traces are then exported to Zipkin for visualization and performance monitoring.
 4. All spans are linked together into a trace
 5. The trace is sent to Zipkin for visualization
 
-## 📈 Benefits
+##  Benefits
 
 - Monitor service-to-service latency
 - Identify bottlenecks and failures
 - Gain visibility into the flow of requests across systems
 
----
 
-For a full working example, refer to the `tracing.js` or `instrumentation.js` file in your codebase.
-```
+
+
+
 
